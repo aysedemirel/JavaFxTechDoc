@@ -2,73 +2,70 @@
 <html>
 
 <head>
-    <title>JavaFX Technical Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <title>JavaFX Technical Document</title>
 </head>
 
 <body>
-    <nav id="navbar">
-        <header>JavaFX Documentation</header>
-        <ul>
-            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-            <li>
-                <a class="nav-link" href="#Install_Java">Install Java</a>
-            </li>
-            <li>
-                <a class="nav-link" href="#Run_HelloWorld_JavaFX_SDK">Run HelloWorld using JavaFX SDK</a>
-            </li>
-            <li><a class="nav-link" href="#Run_HelloWorld_Maven">Run HelloWorld using Maven</a></li>
-            <li><a class="nav-link" href="#Run_HelloWorld_Gradle">Run HelloWorld using Gradle</a></li>
-            <li>
-                <a class="nav-link" href="#Runtime_images">Runtime images</a>
-            </li>
-            <li><a class="nav-link" href="#JavaFX_IntelliJ_IDEA">JavaFX and IntelliJ IDEA</a></li>
+  <nav id="navbar">
+    <header>JavaFX Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li>
+        <a class="nav-link" href="#Install_Java">Install Java</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Run_HelloWorld_using_JavaFX_SDK">Run HelloWorld using JavaFX SDK</a>
+      </li>
+      <li><a class="nav-link" href="#Run_HelloWorld_using_Maven">Run HelloWorld using Maven</a></li>
+      <li><a class="nav-link" href="#Run_HelloWorld_using_Gradle">Run HelloWorld using Gradle</a></li>
+      <li>
+        <a class="nav-link" href="#Runtime_images">Runtime images</a>
+      </li>
+      <!--<li><a class="nav-link" href="#JavaFX_IntelliJ_IDEA">JavaFX and IntelliJ IDEA</a></li>
             <li><a class="nav-link" href="#JavaFX_NetBeans">JavaFX and NetBeans</a></li>
             <li><a class="nav-link" href="#JavaFX_Eclipse">JavaFX and Eclipse</a></li>
-            <li><a class="nav-link" href="#Next_Steps">Next Steps</a></li>
-            <li><a class="nav-link" href="#Reference">Reference</a></li>
-        </ul>
-    </nav>
-    <main id="main-doc">
-        <section class="main-section" id="Introduction">
-            <header>Introduction</header>
-            <article>
-                <p>
-                    JavaFX allows you to create Java applications with a modern, hardware-accelerated user interface
-                    that is highly portable.
-                </p>
+            <li><a class="nav-link" href="#Next_Steps">Next Steps</a></li>-->
+      <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <article>
+        <p>
+          JavaFX allows you to create Java applications with a modern, hardware-accelerated user interface
+          that is highly portable.
+        </p>
 
-                <p>
-                    There is <a href="https://docs.oracle.com/javase/8/javase-clienttechnologies.htm" target="_blank">
-                        detailed reference documentation for JavaFX</a>, and this short tutorial will show you how to
-                    write a JavaFX 15 application.
-                </p>
-                <p>For information on how to run JavaFX applications on mobile platforms, please see <a
-                        href="https://docs.gluonhq.com/#_getting_started" target="_blank">Getting Started with Gluon
-                        Mobile</a>.</p>
-                <p>For information on Long Term Support (LTS) for JavaFX 11, please see <a
-                        href="https://gluonhq.com/services/javafx-support/" target="_blank">JavaFX Long Term Support
-                        options</a>.</p>
-                <p>JavaFX builds on top of JDK and is a standalone component. There are 2 different options for
-                    developing JavaFX applications:</p>
-                <ul>
-                    <li>Use the <a href="https://gluonhq.com/products/javafx/" target="_blank">JavaFX SDK</a> (choosing
-                        between 11 LTS, latest release 15.0.1 or an early access build).</li>
-                    <li>Use a build system (e.g. maven/gradle) to download the required modules from Maven Central
-                        (choosing as well between the same mentioned versions).</li>
-                </ul>
-                <p>In any case, for both options, it is required to have a recent version of JDK 15, or at least JDK 11.
-                </p>
-            </article>
-        </section>
-        <section class="main-section" id="Install_Java">
-            <header>What you should already know</header>
-            <article>
-                <p>Download an appropriate JDK for your operating system. The latest JDK can be downloaded from the
-                    official <a href="http://jdk.java.net/16/" target="_blank">OpenJDK</a> website.</p>
-                <p>Once installed, you can use the <kbd>java</kbd> command from your command line.</p>
-                <p>Check if the correct java version is installed. The following shows the output for OpenJDK 15:</p>
-                <pre>
+        <p>
+          There is <a href="https://docs.oracle.com/javase/8/javase-clienttechnologies.htm" target="_blank">
+            detailed reference documentation for JavaFX</a>, and this short tutorial will show you how to
+          write a JavaFX 15 application.
+        </p>
+        <p>For information on how to run JavaFX applications on mobile platforms, please see <a href="https://docs.gluonhq.com/#_getting_started" target="_blank">Getting Started with Gluon
+            Mobile</a>.</p>
+        <p>For information on Long Term Support (LTS) for JavaFX 11, please see <a href="https://gluonhq.com/services/javafx-support/" target="_blank">JavaFX Long Term Support
+            options</a>.</p>
+        <p>JavaFX builds on top of JDK and is a standalone component. There are 2 different options for
+          developing JavaFX applications:</p>
+        <ul>
+          <li>Use the <a href="https://gluonhq.com/products/javafx/" target="_blank">JavaFX SDK</a> (choosing
+            between 11 LTS, latest release 15.0.1 or an early access build).</li>
+          <li>Use a build system (e.g. maven/gradle) to download the required modules from Maven Central
+            (choosing as well between the same mentioned versions).</li>
+        </ul>
+        <p>In any case, for both options, it is required to have a recent version of JDK 15, or at least JDK 11.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Install_Java">
+      <header>Install Java</header>
+      <article>
+        <p>Download an appropriate JDK for your operating system. The latest JDK can be downloaded from the
+          official <a href="http://jdk.java.net/16/" target="_blank">OpenJDK</a> website.</p>
+        <p>Once installed, you can use the <kbd>java</kbd> command from your command line.</p>
+        <p>Check if the correct java version is installed. The following shows the output for OpenJDK 15:</p>
+        <pre>
                     <code>
                        <span>$</span> java -version
                         openjdk version "15" 2020-09-15
@@ -76,78 +73,427 @@
                         OpenJDK 64-Bit Server VM (build 15+36-1562, mixed mode, sharing)
                     </code>
                 </pre>
-                <p>You need to set the <strong>JAVA_HOME</strong> environment variable to the JDK installation
-                    directory. You can follow
-                    <a href="https://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux" target="_blank">this
-                        guide</a> to set JAVA_HOME for your platform.
-                </p>
-                <p class="alert alert-warning"><strong>Note:</strong> If your system has multiple versions of JDK installed, you need to make sure
-                    that the <kbd>JAVA_HOME</kbd> environment variable points to correct JDK. JavaFX 15 needs at least JDK 11.</p>
-            </article>
-        </section>
-        <section class="main-section" id="Run_HelloWorld_JavaFX_SDK">
-            <header>Run HelloWorld using JavaFX SDK</header>
-            <article>
-                <p>If you want to use the JavaFX SDK instead of a build tool, download an appropriate JavaFX runtime for your operating system and unzip it to a desired location. For this tutorial, we will be using JavaFX 15.0.1.</p>
-                <p>Add an environment variable pointing to the lib directory of the runtime:</p>
-            
-            </article>
-        </section>
-        <section class="main-section" id="Run_HelloWorld_Maven">
-            <header>Run HelloWorld using Maven</header>
-            <article>
-                
-            </article>
-        </section>
-        <section class="main-section" id="Run_HelloWorld_Gradle">
-            <header>Run HelloWorld using Gradle</header>
-            <article>
+        <p>You need to set the <strong>JAVA_HOME</strong> environment variable to the JDK installation
+          directory. You can follow
+          <a href="https://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux" target="_blank">this
+            guide</a> to set JAVA_HOME for your platform.
+        </p>
+        <p class="alert alert-warning"><strong>Note:</strong> If your system has multiple versions of JDK
+          installed, you need to make sure
+          that the <kbd>JAVA_HOME</kbd> environment variable points to correct JDK. JavaFX 15 needs at least
+          JDK 11.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Run_HelloWorld_using_JavaFX_SDK">
+      <header>Run HelloWorld using JavaFX SDK</header>
+      <article>
+        <p>If you want to use the JavaFX SDK instead of a build tool, download an appropriate JavaFX runtime for
+          your operating system and unzip it to a desired location. For this tutorial, we will be using JavaFX
+          15.0.1.</p>
+        <p>Add an environment variable pointing to the lib directory of the runtime:</p>
 
-            </article>
-        </section>
-        <section class="main-section" id="Runtime_images">
-            <header>Runtime images</header>
-            <article>
-                
-            </article>
-        </section>
-        <section class="main-section" id="JavaFX_IntelliJ_IDEA">
+        <ul class="tab-button">
+          <li><button class="tablinks" onclick="openTab(event, 'win_env')">Windows</button></li>
+          <li><button class="tablinks" onclick="openTab(event, 'nix_env')">Linux/Mac</button></li>
+        </ul>
+        <div id="nix_env" class="tabcontent">
+          <pre>
+                        <code>
+                            export PATH_TO_FX=path/to/javafx-sdk-<span>15.0.1</span>/lib
+                        </code>
+                    </pre>
+        </div>
+        <div id="win_env" class="tabcontent">
+          <pre>
+                        <code>
+                            set PATH_TO_FX="path\to\javafx-sdk-<span>15.0.1</span>/lib
+                        </code>
+                    </pre>
+        </div>
+
+        <p>You can now compile and run JavaFX applications from the command line using the JavaFX runtime.</p>
+        <p>Compile the application (e.g. use <a href="https://github.com/openjfx/samples/blob/master/HelloFX/CLI/hellofx/HelloFX.java" target="_blank">HelloFX.java</a> from this <a href="https://github.com/openjfx/samples/tree/master/HelloFX/CLI" target="_blank">sample</a>)
+          using:
+        </p>
+
+        <ul class="tab-button">
+          <li><button class="tablinks" onclick="openTab(event, 'win_javac')">Windows</button></li>
+          <li><button class="tablinks" onclick="openTab(event, 'nix_javac')">Linux/Mac</button></li>
+        </ul>
+        <div id="nix_javac" class="tabcontent">
+          <pre>
+                        <code>
+                            javac --module-path $PATH_TO_FX --add-modules javafx.controls HelloFX.java
+                        </code>
+                    </pre>
+        </div>
+        <div id="win_javac" class="tabcontent">
+          <pre>
+                        <code>
+                            javac --module-path %PATH_TO_FX% --add-modules javafx.controls HelloFX.java
+                        </code>
+                    </pre>
+        </div>
+
+        <p>
+          <b>Important</b>: Make sure to add the required modules, keeping into account transitive
+          dependencies are automatically resolved
+          (for instance, there is no need to add <kbd>javafx.graphics</kbd> module, since it is
+          <a href="https://openjfx.io/javadoc/12/javafx.controls/module-summary.html" target="_blank">transitively</a> required by the
+          <kbd>javafx.controls</kbd> module). But if your application is using <kbd>FXML</kbd>, you will need
+          to
+          add the <kbd>javafx.fxml</kbd> module as well, as shown below:
+        </p>
+
+        <ul class="tab-button">
+          <li><button class="tablinks" onclick="openTab(event, 'win_fxml')">Windows</button></li>
+          <li><button class="tablinks" onclick="openTab(event, 'nix_fxml')">Linux/Mac</button></li>
+        </ul>
+        <div id="nix_fxml" class="tabcontent">
+          <pre>
+                        <code>
+                            javac --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml HelloFX.java
+                        </code>
+                    </pre>
+        </div>
+        <div id="win_fxml" class="tabcontent">
+          <pre>
+                        <code>
+                            javac --module-path %PATH_TO_FX% --add-modules javafx.controls,javafx.fxml HelloFX.java
+                        </code>
+                    </pre>
+        </div>
+
+        <p>
+          Finally, run the application using:
+        </p>
+
+        <ul class="tab-button">
+          <li><button class="tablinks" onclick="openTab(event, 'win_java')">Windows</button></li>
+          <li><button class="tablinks" onclick="openTab(event, 'nix_java')">Linux/Mac</button></li>
+        </ul>
+        <div id="nix_java" class="tabcontent">
+          <pre>
+                        <code>
+                            java --module-path $PATH_TO_FX --add-modules javafx.controls HelloFX
+                        </code>
+                    </pre>
+        </div>
+        <div id="win_java" class="tabcontent">
+          <pre>
+                        <code>
+                            java --module-path %PATH_TO_FX% --add-modules javafx.controls HelloFX
+                        </code>
+                    </pre>
+        </div>
+      </article>
+    </section>
+    <section class="main-section" id="Run_HelloWorld_using_Maven">
+      <header>Run HelloWorld using Maven</header>
+      <article>
+        <p>If you want to develop JavaFX applications using Maven, you don't have to download the JavaFX SDK.
+          Just specify the modules and the versions you want in the <kbd>pom.xml</kbd>, and the build system
+          will download the required modules, including the native libraries for your platform.</p>
+        <p>Here is a <a href="https://github.com/openjfx/samples/blob/master/HelloFX/Maven/hellofx/pom.xml" target="_blank">pom.xml</a> file which shows how to achieve this, included in this <a href="https://github.com/openjfx/samples/tree/master/HelloFX/Maven" target="_blank">sample</a>.
+        </p>
+        <p>Alternatively, we have created <a href="https://github.com/openjfx/javafx-maven-archetypes" target="_blank">JavaFX Maven Archetypes</a> to quickly create Maven projects. A simple
+          JavaFX project can be created by executing the following command:</p>
+        <pre>
+    <code>mvn archetype:generate \
+        -DarchetypeGroupId=org.openjfx \
+        -DarchetypeArtifactId=javafx-archetype-simple \
+        -DarchetypeVersion=0.0.3 \
+        -DgroupId=org.openjfx \
+        -DartifactId=sample \
+        -Dversion=1.0.0 \
+        -Djavafx-version=15.0.1</code>
+</pre>
+        <p>The pom uses the <a href="https://github.com/openjfx/javafx-maven-plugin" target="_blank">JavaFX
+            Maven plugin</a>:</p>
+
+        <pre>
+                            <code>
+                                &lt;plugins&gt;
+                                    &lt;plugin&gt;
+                                        &lt;groupId&gt;org.openjfx&lt;/groupId&gt;
+                                        &lt;artifactId&gt;javafx-maven-plugin&lt;/artifactId&gt;
+                                        &lt;version&gt;<span class="JFX_MVN_PLUGIN_VERSION">0.0.5</span>&lt;/version&gt;
+                                        &lt;configuration&gt;
+                                            &lt;mainClass&gt;HelloFX&lt;/mainClass&gt;
+                                        &lt;/configuration&gt;
+                                    &lt;/plugin&gt;
+                                &lt;/plugins&gt;
+                                </code>
+                        </pre>
+        <p>Add the maven dependencies:</p>
+        <pre><code>
+                            &lt;dependencies&gt;
+                              &lt;dependency&gt;
+                                &lt;groupId&gt;org.openjfx&lt;/groupId&gt;
+                                &lt;artifactId&gt;javafx-controls&lt;/artifactId&gt;
+                                &lt;version&gt;<span class="JFX_VERSION">15.0.1</span>&lt;/version&gt;
+                              &lt;/dependency&gt;
+                            &lt;/dependencies&gt;
+                            </code></pre>
+        <p>
+          <b>Important</b>: Note that transitive dependencies are automatically resolved
+          (for instance, there is no need to add a dependency for the <kbd>javafx.graphics</kbd> module, since
+          it is
+          <a href="https://openjfx.io/javadoc/15/javafx.controls/module-summary.html" target="_blank">transitively</a> resolved by the
+          <kbd>javafx.controls</kbd> module). But if your application is using <kbd>FXML</kbd>, you will need
+          to
+          add a dependency for the <kbd>javafx.fxml</kbd> module as well.
+        </p>
+        <p>
+          Finally, run the application (e.g. based on the <a class="samples" href="https://github.com/openjfx/samples/blob/master/HelloFX/Maven/hellofx/src/main/java/HelloFX.java" target="_blank">HelloFX.java</a>
+          from the referred sample):
+        </p>
+        <pre><code>
+                                mvn clean javafx:run
+                                </code></pre>
+
+        <p class="alert alert-warning"><strong>Note:</strong> Make sure to set the JAVA_HOME environment
+          variable to the correct JDK location.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Run_HelloWorld_using_Gradle">
+      <header>Run HelloWorld using Gradle</header>
+      <article>
+        <p>
+          Similar to Maven, we can declare the required JavaFX modules in the <kbd>build.gradle</kbd> file.
+          However, for Gradle we need to apply the JavaFX gradle plugin:
+        </p>
+        <pre><code>
+                    plugins {
+                      id 'application'
+                      id 'org.openjfx.javafxplugin' version '<span class="JFX_PLUGIN_VERSION">0.0.9</span>'
+                    }
+                    </code></pre>
+        <p>
+          Next, we add the required modules. For instance, if we only need the <kbd>javafx.controls</kbd>
+          module, we will include:
+        </p>
+        <pre><code>
+                        javafx {
+                            version = "<span class="JFX_VERSION">15.0.1</span>"
+                            modules = [ 'javafx.controls' ]
+                        }
+                        </code></pre>
+        <p>
+          <b>Important</b>: Note that transitive dependencies are automatically resolved
+          (for instance, there is no need to add a dependency for the <kbd>javafx.graphics</kbd> module, since
+          it is
+          <a href="https://openjfx.io/javadoc/15/javafx.controls/module-summary.html" target="_blank">transitively</a> resolved by the
+          <kbd>javafx.controls</kbd> module). But if your application is using <kbd>FXML</kbd>, you will need
+          to
+          add the <kbd>javafx.fxml</kbd> module as well.
+        </p>
+        <p>
+          You can specify a distinct version of JavaFX. For example, if you want to stick to JavaFX 11.0.2:
+        </p>
+        <pre><code>
+                            javafx {
+                                version = "11.0.2"
+                                modules = [ 'javafx.controls' ]
+                            }
+                            </code></pre>
+        <p>
+          Here is a <a class="samples" href="https://github.com/openjfx/samples/blob/master/HelloFX/Gradle/hellofx/build.gradle" target="_blank">build.gradle</a>
+          file which shows how to achieve this, taken from
+          this <a class="samples" href="https://github.com/openjfx/samples/blob/master/HelloFX/Gradle" target="_blank">sample</a>.
+        </p>
+        <p>
+          Run the application (e.g. use <a class="samples" href="https://github.com/openjfx/samples/blob/master/HelloFX/Gradle/hellofx/src/main/java/HelloFX.java" target="_blank">HelloFX.java</a>
+          from the given sample) using:
+        </p>
+        <ul class="tab-button">
+          <li><button class="tablinks" onclick="openTab(event, 'win_gradle')">Windows</button></li>
+          <li><button class="tablinks" onclick="openTab(event, 'nix_gradle')">Linux/Mac</button></li>
+        </ul>
+        <div id="nix_gradle" class="tabcontent">
+          <pre>
+                                    <code>
+                                        ./gradlew run
+                                    </code>
+                                </pre>
+        </div>
+        <div id="win_gradle" class="tabcontent">
+          <pre>
+                                    <code>
+                                        gradlew run
+                                    </code>
+                                </pre>
+        </div>
+        <div class="jdk-table">
+          <p class="alert alert-warning"><strong>Note:</strong> Our recommendation for the minimum Gradle
+            version
+            against each JDK is as follows:</p>
+          <table class="jdk-gradle-version">
+            <tbody>
+              <tr>
+                <th>JDK version</th>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <th>Gradle Version</th>
+                <td>5.0</td>
+                <td>5.0</td>
+                <td>6.0</td>
+                <td>6.3</td>
+                <td>6.3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+    <section class="main-section" id="Runtime_images">
+      <header>Runtime images</header>
+      <article>
+        <p>
+          A runtime image of your JavaFX project is a custom JRE that contains only the platform modules that
+          are required for your application.
+        </p>
+        <p>
+          If you want to create a runtime image of your JavaFX project follow these instructions.
+        </p>
+        <p>
+          Download an appropriate <a target="_blank" href="https://gluonhq.com/products/javafx/">JavaFX
+            runtime and JavaFX jmods</a>
+          for your operating system and unzip them to a desired location.
+        </p>
+        <p>
+          Add these environment variables pointing to the lib directory of the runtime and to the jmods
+          directory:
+        </p>
+
+        <ul class="tab-button">
+          <li> <button class="tablinks" onclick="openTab(event, 'win_mods')">Windows</button></li>
+          <li> <button class="tablinks" onclick="openTab(event, 'nix_mods')">Linux/Mac</button></li>
+        </ul>
+        <div id="nix_mods" class="tabcontent">
+          <pre>
+                        <code>
+                            export PATH_TO_FX=path/to/javafx-sdk-<span class="JFX_VERSION">15.0.1</span>/lib
+                            export PATH_TO_FX_MODS=path/to/javafx-jmods-<span class="JFX_VERSION">15.0.1</span>
+                            </code>
+                                </pre>
+        </div>
+        <div id="win_mods" class="tabcontent">
+          <pre>
+                        <code>
+                            set PATH_TO_FX="path\to\javafx-sdk-<span class="JFX_VERSION">15.0.1</span>\lib"
+                            set PATH_TO_FX_MODS="path\to\javafx-jmods-<span class="JFX_VERSION">15.0.1</span>"
+                            </code>
+                                </pre>
+        </div>
+
+        <h3>Command Line</h3>
+        <p>
+          You can run or create a runtime image of your JavaFX project from command line. A simple example can
+          be found in this
+          <a class="samples" href="https://github.com/openjfx/samples/blob/master/CommandLine/Modular/CLI" target="_blank">project</a>.
+        </p>
+        <p>
+          The application has a single class <a class="samples" href="https://github.com/openjfx/samples/blob/master/CommandLine/Modular/CLI/hellofx/src/hellofx/HelloFX.java" target="_blank">HelloFX.java</a> with its
+          <a class="samples" href="https://github.com/openjfx/samples/blob/master/CommandLine/Modular/CLI/hellofx/src/module-info.java" target="_blank">module-info</a>
+          file that defines the <kbd>hellofx</kbd> module.
+
+          Compile it either using the JavaFX SDK:
+        </p>
+        <ul class="tab-button">
+          <li><button class="tablinks" onclick="openTab(event, 'win_javacd')">Windows</button></li>
+          <li><button class="tablinks" onclick="openTab(event, 'nix_javacd')">Linux/Mac</button></li>
+        </ul>
+        <div id="nix_javacd" class="tabcontent">
+          <pre>
+                        <code>
+                            javac --module-path $PATH_TO_FX -d mods/hellofx $(find src/ -name "*.java")
+                            </code>
+                                </pre>
+        </div>
+        <div id="win_javacd" class="tabcontent">
+          <pre>
+                        <code>
+                            dir /s /b src\*.java &gt; sources.txt &amp; javac --module-path %PATH_TO_FX% -d mods/hellofx @sources.txt &amp; del sources.txt
+                            </code>
+                                </pre>
+        </div>
+        <p>
+          or using the JavaFX jmods:
+        </p>
+
+        <ul class="tab-button">
+          <li><button class="tablinks" onclick="openTab(event, 'win_javacdmod')">Windows</button></li>
+          <li><button class="tablinks" onclick="openTab(event, 'nix_javacdmod')">Linux/Mac</button></li>
+        </ul>
+        <div id="nix_javacdmod" class="tabcontent">
+          <pre>
+                        <code>
+                            javac --module-path $PATH_TO_FX_MODS -d mods/hellofx $(find src/ -name "*.java")
+                            </code>
+                                </pre>
+        </div>
+        <div id="win_javacdmod" class="tabcontent">
+          <pre>
+                        <code>
+                            dir /s /b src\*.java &gt; sources.txt &amp; javac --module-path %PATH_TO_FX_MODS% -d mods/hellofx @sources.txt &amp; del sources.txt
+                            </code>
+                                </pre>
+        </div>
+
+        <p class="alert alert-warning"><strong>Note:</strong>Note that the output is placed under<kbd>
+            mods/hellofx</kbd> for convenience, but it could use any other name.</p>
+        <p>
+          To run the modular application with the <kbd>java</kbd> command you need the JavaFX SDK modules and your module
+          added to the module path:
+        </p>
+
+      </article>
+    </section>
+    <!--<section class="main-section" id="JavaFX_IntelliJ_IDEA">
             <header>JavaFX and IntelliJ IDEA</header>
             <article>
-                
+
             </article>
         </section>
         <section class="main-section" id="JavaFX_NetBeans">
             <header>JavaFX and NetBeans</header>
             <article>
-               
+
             </article>
         </section>
         <section class="main-section" id="JavaFX_Eclipse">
             <header>JavaFX and Eclipse</header>
             <article>
-               
+
             </article>
         </section>
         <section class="main-section" id="Next_Steps">
             <header>Next Steps</header>
             <article>
-                
-            </article>
-        </section>
-        <section class="main-section" id="Reference">
-            <header>Reference</header>
-            <article>
-                <ul>
-                    <li>
-                        All the documentation in this page is taken from
-                        <a href="https://openjfx.io/openjfx-docs/" target="_blank">Open JavaFX Documentation</a>
-                    </li>
-                </ul>
-            </article>
-        </section>
-    </main>
 
+            </article>
+        </section>-->
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <article>
+        <ul>
+          <li>
+            All the documentation in this page is taken from
+            <a href="https://openjfx.io/openjfx-docs/" target="_blank">Open JavaFX Documentation</a>
+          </li>
+        </ul>
+      </article>
+    </section>
+  </main>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

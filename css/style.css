@@ -3,7 +3,7 @@ body {
   min-width: 290px;
   color: #4d4e53;
   background-color: #ffffff;
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -26,52 +26,54 @@ header {
   font-weight: thin;
 }
 
-a, a:visited{
-    color: #4cd4ac;
+a,
+a:visited {
+  color: #4cd4ac;
 }
 
-kbd{
-    color: #2b3e50;
-    background-color: #dff0f7;
-    padding: .2rem .4rem;
-    border-radius: .2rem;
-    font-size: 87.5%;
+kbd {
+  color: #2b3e50;
+  background-color: #dff0f7;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+  font-size: 87.5%;
 }
 
-pre{
-    white-space: pre-wrap;
-    padding-left: 20px;
-    padding-right: 20px;
-    background: #2b3e50;
-    border-radius: 5px;
-    display: block;
-    /*font-size: 87.5%;*/
-    color: #212529;
+pre {
+  white-space: pre-wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #2b3e50;
+  border-radius: 5px;
+  display: block;
+  /*font-size: 87.5%;*/
+  color: #212529;
+  margin-top: 0;
 }
 
-pre code{
-    font-size: inherit;
-    color: #f8f8f1 !important;
-    background: #2b3e50;
+pre code {
+  font-size: inherit;
+  color: #f8f8f1 !important;
+  background: #2b3e50;
 }
 
 .alert-warning {
-    color: #856404;
-    background-color: #fff3cd;
-    border-color: #ffeeba;
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
 }
 
 .alert {
-    position: relative;
-    padding: .75rem 1.25rem;
-    margin-bottom: 1rem;
-    border: 1px solid transparent;
-    border-radius: .25rem;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
 }
 
 p.alert-warning > kbd {
-    background-color: #f2e2b0;
-    color: #2b3e50;
+  background-color: #f2e2b0;
+  color: #2b3e50;
 }
 
 #main-doc header {
@@ -170,5 +172,194 @@ code {
     padding: 15px;
     padding-left: 10px;
     padding-right: 45px;
+  }
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #547089;
+}
+
+.tab-button {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #547089;
+  list-style: none;
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.tab-button li {
+  margin: 0px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab-button button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab-button button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tab-button button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.nav-tabs,
+.nav-tabs .nav-link {
+  border: 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.nav {
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.tab-content > .active {
+  display: block;
+}
+
+table.jdk-gradle-version,
+td {
+  table-layout: fixed;
+  width: 50px;
+}
+
+table.jdk-gradle-version,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+table.jdk-gradle-version {
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+table.jdk-gradle-version,
+th {
+  table-layout: fixed;
+  width: 150px;
+}
+
+.jdk-table {
+  background-color: #fff3cd;
+  margin-bottom: 2px;
+  padding-bottom: 0.75rem;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
   }
 }
