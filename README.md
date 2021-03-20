@@ -5,7 +5,7 @@ It is a project for FreeCodeCamp. The main idea is to build a technical document
 
 **Demo:**  https://codepen.io/aysedemirel/pen/OJbKLRa
 
-![javaFxTechDoc](.\img\javaFxTechDoc.gif)
+![javaFxTechDoc](./img/javaFxTechDoc.gif)
 
 **From [Build a Technical Documentation](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page) Project Task:**
 
